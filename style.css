@@ -1,0 +1,143 @@
+/*## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)*/
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --paleblue-: hsl(225, 100%, 94%);
+  --brightblue-: hsl(245, 75%, 52%);
+  --very-paleblue--: hsl(225, 100%, 98%);
+  --desaturared-blue-: hsl(224, 23%, 55%);
+  --darkblue--: hsl(223, 47%, 23%);
+  --main-font: "Red Hat Display", sans-serif;
+}
+body {
+  background-image: url("images/pattern-background-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1440px;
+  height: 437px;
+  background-color: var(--paleblue-);
+  font-family: var(--main-font);
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 150px;
+}
+.whole {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 11px;
+  height: 697px;
+}
+.topimg {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+h1 {
+  width: 354px;
+  height: 37px;
+  font-size: 28px;
+}
+.text {
+  font-size: 1em;
+  width: 354px;
+  height: 78px;
+  color: #717fa6;
+  text-align: center;
+  line-height: 26px;
+  padding-bottom: 80px;
+}
+.plan {
+  display: flex;
+  border: 2px solid var(--very-paleblue--);
+  background-color: hsl(225, 100%, 98%);
+  opacity: 0.7;
+  border-radius: 11px;
+  width: 354px;
+  height: 98px;
+}
+.payme {
+  display: flex;
+  align-items: center;
+  line-height: 26px;
+  color: #717fa6;
+  text-align: start;
+  gap: 20px;
+}
+strong {
+  color: #1f2e55;
+  font-weight: 900;
+  font-size: 18px;
+}
+#music {
+  width: 48px;
+  height: auto;
+  margin-left: 15px;
+}
+span {
+  text-decoration: underline;
+  color: var(--brightblue-);
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 85px;
+}
+span:hover {
+  text-decoration: none;
+  color: #766cf1;
+  transition: ease-in 100ms;
+}
+
+.pay {
+  border: 1px solid #382ae1;
+  background-color: #382ae1;
+  color: white;
+  border-radius: 10px;
+  width: 354px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  box-shadow: 0px 12px 14px hsla(227, 38%, 72%, 0.601);
+}
+.cancel {
+  font-weight: 600;
+  color: #717fa6;
+}
+.cancel:hover {
+  color: #1f2e55;
+  cursor: pointer;
+  transition: ease-in 100ms;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 30px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
